@@ -1,0 +1,172 @@
+
+body
+	background: #dfdfdf
+//Mobile
+.home
+	background: #dfdfdf url('../img/home_banner.png') no-repeat center center
+	background-size: 100% 100%
+	min-height: 15em
+	color: white
+	display: flex
+	align-items: center
+	h2
+		font-size: 1.5rem
+		margin: 2rem 3rem 1rem
+
+	p
+		font-size: .7rem
+		margin-left: 3rem
+	+media-breakpoint-up(md)
+		background-size: 100% 100%
+		min-height: 25em
+		color: white
+		display: flex
+		align-items: center
+		h2
+			font-size: 2rem
+			margin: 2rem 3rem 1rem
+		p
+			font-size: 1.2rem
+			margin-left: 3rem
+.intro
+	position: relative
+	background: white
+	h1
+		display: flex
+		justify-content: center
+		margin-top: 3rem
+		margin-bottom: 5rem
+		position: relative
+		font-size: 1.5rem
+		color: purple
+		span
+			color: black
+		&:before
+			content: ''
+			display: block
+			height: 5px
+			background: purple
+			width: 6rem
+			position: absolute
+			left: 50%
+			bottom: -10px
+			transform: translateX(-50%)
+		+media-breakpoint-up(md)
+			font-size: 4rem
+			&:before
+				content: ''
+				display: block
+				height: 5px
+				background: purple
+				width: 20rem
+				position: absolute
+				left: 50%
+				bottom: -10px
+				transform: translateX(-50%)
+	figure
+		.box
+			position: relative
+			overflow: hidden
+			border-radius: .5rem
+			img
+				width: 100%	
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				width: 100%
+				height: 100%
+				background: #9e9a9abf
+				transition: .5s all ease-in-out
+				opacity: 0
+				top: 100%
+			i
+				position: absolute
+				top: 50%
+				left: 50%
+				font-size: 3rem
+				transform: translateX(-50%) translateY(-50%)
+				opacity: 0
+				transition: .5s all ease-in-out
+				color: #fff
+	&:hover,&:active
+		figure
+			.box
+				&:before
+					opacity: 1
+					top: 0
+				i
+					opacity: 1
+			
+	.slide
+		.owl-carousel
+			.owl-nav
+				.owl-prev
+					width: 2rem
+					height: 2rem
+					background: #2c3e50
+					position: absolute
+					bottom: .5rem
+					left: -3rem
+					color: #dfdfdf
+				.owl-next
+					width: 2rem
+					height: 2rem
+					background: #2c3e50
+					position: absolute
+					bottom: .5rem
+					right: -3rem
+					color: #dfdfdf
+.infor
+	background: #3498db
+	color: white
+	.container
+		display: flex
+		align-items: center
+		justify-content: center
+		.text
+			margin-top: 1rem
+			margin-bottom: 1rem
+			&:last-child
+				margin-bottom: 2rem
+		+media-breakpoint-up(md)
+			.text:last-child
+				margin-top: 4.6rem
+				margin-bottom: 2rem
+footer
+	background: #3F51B5
+	.copyright
+		display: flex
+		align-items: center
+		transform: translateY(-10%)
+	.fa.fa-twitter
+		width: 3rem
+		height: 3rem
+		background: gray
+		border-radius: 50%
+		position: relative
+		color: white
+		margin: .5rem .5rem
+		&:before
+			position: absolute
+			bottom: 14px
+			right: 14px
+		&:hover
+			background: white
+			color: black
+	.fa.fa-facebook
+		width: 3rem
+		height: 3rem
+		background: gray
+		border-radius: 50%
+		position: relative
+		color: white
+		margin: .5rem .5rem
+		&:before
+			position: absolute
+			bottom: 14px
+			right: 17px
+		&:hover
+			background: white
+			color: black
+

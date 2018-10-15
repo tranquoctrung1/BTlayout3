@@ -1,0 +1,27 @@
+<!-- ////////////// HEADER ////////////// -->
+header
+	nav.navbar.navbar-expand-lg.navbar-light(style="background-color: #e3f2fd;")
+			img.ing-fluid(src="./img/logo.png", alt="Logo FullStackVietNam", srcset="")
+			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+				span.navbar-toggler-icon
+			#navbarSupportedContent.collapse.navbar-collapse
+			.mr-auto
+				ul.navbar-nav
+					li.nav-item.active
+						a.nav-link(href="#")
+							| Home 
+							span.sr-only (current)
+					li.nav-item
+						a.nav-link(href="#") Services
+					li.nav-item.dropdown
+						a#navbarDropdown.nav-link.dropdown-toggle(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+							| About
+						.dropdown-menu(aria-labelledby="navbarDropdown")
+							a.dropdown-item(href="#") Company
+							a.dropdown-item(href="#") Our Project
+							.dropdown-divider
+							a.dropdown-item(href="#") Achievement
+					li.nav-item
+						a.nav-link.disabled(href="#") Contact
+
+<!-- ////////////// HEADER ////////////// -->
